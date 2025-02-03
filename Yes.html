@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi🙋 </title>
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Styling the buttons */
+        .btn a, .btn button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none; /* Remove underline for 'Yes' link */
+            background-color: #f0f0f0; /* Light background color */
+            border: none; /* Remove default button border */
+            border-radius: 5px; /* Rounded corners for both buttons */
+        }
+
+        .btn button {
+            background-color: #f0f0f0; /* Same as the 'Yes' button */
+        }
+
+        .btn a {
+            background-color: #f0f0f0; /* Same as the 'No' button */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="22414982" data-share-method="host" data-aspect-ratio="1.33891" data-width="100%"><a href="https://tenor.com/view/spongebob-squidward-funny-gif-22414982">Spongebob Squidward GIF</a>from <a href="https://tenor.com/search/spongebob-gifs">Spongebob GIFs</a></div> 
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            
+            <h2> Are you sure bebu hihi??😁😋</h2>
+        
+            <div class="btn">
+                <!-- Yes button link -->
+                <a href="Yes1.html" id="yesButton">Yes🙂</a>
+                
+                <!-- No button with matching padding -->
+                <button id="noButton">No😒</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Get button elements
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+
+        // Add event listener to the "No" button
+        noButton.addEventListener('click', function() {
+            // Increase the size of the "Yes" button each time "No" is clicked
+            let currentSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentSize + 5) + '1px';
+        });
+    </script>
+
+</body>
+</html>
